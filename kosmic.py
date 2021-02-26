@@ -64,7 +64,7 @@ with open('index.html', 'w') as f:
   </head>
   <body>
     <p>&hellip; %s</p>
-    <p class="attr">- @Kosmicd12</p>
+    <p class="attr">- <a href="https://twitter.com/Kosmicd12">@Kosmicd12</a></p>
     <p class="info">
       Checks for updates every hour.
       <a href="https://github.com/relrod/kosmic-new-year">open source</a>.
