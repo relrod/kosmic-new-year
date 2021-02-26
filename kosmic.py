@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 
-import datetime
 import twitter
 import os
 import yaml
@@ -69,9 +68,6 @@ with open('index.html', 'w') as f:
       Checks for updates every hour.
       <a href="https://github.com/relrod/kosmic-new-year">open source</a>.
     </p>
-    <p class="info">
-      Last check: %s UTC
-    </p>
   </body>
 </html>
-''' % (' '.join(out), datetime.datetime.utcnow()))
+''' % ' '.join(out))
