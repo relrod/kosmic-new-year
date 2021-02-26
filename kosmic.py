@@ -70,7 +70,7 @@ with open('index.html', 'w') as f:
       <a href="https://github.com/relrod/kosmic-new-year">open source</a>.
     </p>
     <p class="info">
-      Last update: %s UTC
+      Last check: %s UTC
     </p>
   </body>
 </html>
