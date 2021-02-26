@@ -7,7 +7,7 @@ on:
     - cron: '*/60 * * * *'
 
 jobs:
-  test:
+  build:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     strategy:
@@ -21,7 +21,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip3 install python-twitter
+          pip3 install python-twitter pyyaml
 
       - name: Build site
         run: python3 kosmic.py
