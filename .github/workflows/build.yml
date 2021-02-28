@@ -4,7 +4,7 @@ on:
   push:
   pull_request:
   schedule:
-    - cron: '*/60 * * * *'
+    - cron: '0 * * * *'
 
 jobs:
   build:
@@ -38,9 +38,3 @@ jobs:
           git add .
           git commit -sm 'Latest tweet' || true
           git push
-
-      - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@4.0.0
-        with:
-          branch: gh-pages
-          folder: .
