@@ -20,8 +20,7 @@ jobs:
           python-version: '3.x'
 
       - name: Install dependencies
-        run: |
-          pip3 install python-twitter pyyaml
+        run: pip3 install python-twitter pyyaml
 
       - name: Build site
         run: python3 kosmic.py
