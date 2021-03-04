@@ -56,29 +56,29 @@ def main():
 
     with open('index.html', 'w') as f:
         f.write('''<!doctype html>
-    <html>
-      <head>
-        <title>Kosmic's Daily New Year Tweet</title>
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
-        <style>
-          body { margin: 0 auto; width: 600px; }
-          p { font-family: 'Playfair Display', serif; font-size: 2em; }
-          p.attr { text-align: right; font-size: 1em; }
-          p.info { font-size: 0.6em; color: #666; text-align: center; }
-          a { text-decoration: none; color: #000; }
-        </style>
-      </head>
-      <body>
-        <p>&hellip; %s</p>
-        <p class="attr">- <a href="https://twitter.com/Kosmicd12">@Kosmicd12</a></p>
-        <p class="info">
-          Checks for updates every hour.
-          <a href="https://github.com/relrod/kosmic-new-year">open source</a>.
-        </p>
-      </body>
-    </html>
-    ''' % ' '.join(out))
+<html>
+  <head>
+    <title>Kosmic's Daily New Year Tweet</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+    <style>
+      body { margin: 0 auto; width: 600px; }
+      p { font-family: 'Playfair Display', serif; font-size: 2em; }
+      p.attr { text-align: right; font-size: 1em; }
+      p.info { font-size: 0.6em; color: #666; text-align: center; }
+      a { text-decoration: none; color: #000; }
+    </style>
+  </head>
+  <body>
+    <p>&hellip; %s</p>
+    <p class="attr">- <a href="https://twitter.com/Kosmicd12">@Kosmicd12</a></p>
+    <p class="info">
+      Checks for updates every hour.
+      <a href="https://github.com/relrod/kosmic-new-year">open source</a>.
+    </p>
+  </body>
+</html>
+''' % ' '.join(out))
 
 if __name__ == '__main__':
     main()
