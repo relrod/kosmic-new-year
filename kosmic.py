@@ -24,6 +24,9 @@ def setup():
 
     return (api, cache, latest_id, tl)
 
+def not_last_word(string):
+    return string.rsplit(' ', 1)[0]
+
 def main():
     (api, cache, latest_id, tl) = setup()
     for tweet in tl[::-1]:
@@ -42,10 +45,14 @@ def main():
     with open('data.yml', 'w') as f:
         f.write(yaml.dump(cache))
 
+    with open('latest', 'w') as f:
+        word = not_last_word(cache[-1]['text'])
+        f.write('{0}\n'.format(word))
+
     out = []
     new_para = False
     for ele in cache[::-1]:
-        word = ele['text'].rsplit(' ', 1)[0]
+        word = not_last_word(ele['text'])
         link = '<a href="https://twitter.com/Kosmicd12/status/{0}">{1}</a>'.format(
             ele['id'],
             word)

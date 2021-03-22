@@ -35,5 +35,5 @@ jobs:
           git config --global user.name 'Automatic Update'
           git config --global user.email 'relrod@users.noreply.github.com'
           git add .
-          git commit -sm 'Latest tweet' || true
+          git commit -sm "Latest word: $(cat latest)" || true
           git push
